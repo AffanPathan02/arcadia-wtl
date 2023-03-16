@@ -1,0 +1,185 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .login-btn, .register-btn {
+    margin-left: auto;
+  }
+  
+  .login-btn {
+    margin-right: 20px;
+  }
+
+
+
+nav ul li {
+	margin: 0 10px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	padding: 52px;
+	border-radius: 5px;
+	transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+	background-color: #fff;
+	color: #333;
+}
+
+
+header h1 {
+	font-size: 36px;
+	margin: 0;
+	padding: 20px;
+	display: inline-block;
+}
+
+.updates{
+    background-color: #f5f5f5;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.tutorials{
+    background-image: url('tut-bg.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+.tutorials h2{
+    margin: 0;
+	padding: 0;
+}
+
+
+.reviews{
+    background-image: url('review-bg.jpg');
+    padding: 100px 0;
+    text-align: center;
+}
+
+.marketplace {
+    background-image: url('market-bg.jpg');
+    background-size: cover;
+    padding: 100px 0;
+    text-align: center;
+}
+.marketplace h2{
+    color: #f5f5f5;
+}
+.marketplace p{
+    color: #f5f5f5;
+}
+
+.btn-nav:hover {
+    background-color: #333;
+    color: #fff;
+    }
+
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #333;
+    padding: 15px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 18px;
+    margin-top: 20px;
+    }
+    
+    .btn:hover {
+    background-color: #333;
+    color: #fff;
+    }
+    
+    
+    .tutorials h2, .reviews h2, .marketplace h2 {
+    font-size: 36px;
+    margin: 0;
+    padding: 0;
+    }
+    
+    .tutorials p, .reviews p, .marketplace p {
+    font-size: 24px;
+    margin: 20px 0;
+    padding: 0;
+    }
+    
+    footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    }
+    
+    footer p {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    }
+    
+    @media screen and (max-width: 768px) {
+    header h1 {
+    font-size: 24px;
+    }
+}
+nav ul li a {
+	padding: 42px;
+    margin: 18px;
+}
+
+.hero h2 {
+	font-size: 36px;
+}
+
+.hero p {
+	font-size: 18px;
+}
+
+.btn {
+	padding: 10px 20px;
+	font-size: 14px;
+}
+
+.tutorials h2, .reviews h2, .marketplace h2 {
+	font-size: 24px;
+}
+
+.tutorials p, .reviews p, .marketplace p {
+	font-size: 18px;
+}
+
+footer p {
+	font-size: 14px;
+}

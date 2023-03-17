@@ -13,7 +13,7 @@ body{
 	height: 500px;
 	background: red;
 	overflow: hidden;
-	background: url("register-bg.jpg") no-repeat center/ cover;
+	background: url("/public/register-bg.jpg") no-repeat center/ cover;
 	border-radius: 10px;
 	box-shadow: 5px 20px 50px #000;
 }
@@ -69,7 +69,7 @@ button:hover{
 }
 .login{
 	height: 460px;
-	background: url('register-bg.jpg');
+	background: url('/public/register-bg.jpg');
 	border-radius: 60% / 10%;
 	transform: translateY(-180px);
 	transition: .8s ease-in-out;

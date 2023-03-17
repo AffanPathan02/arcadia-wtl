@@ -72,7 +72,7 @@ header h1 {
 }
 
 .tutorials{
-    background-image: url('tut-bg.jpg');
+    background-image: url('/public/tut-bg.jpg');
     background-size: cover;
     padding: 100px 0;
     text-align: center;
@@ -84,13 +84,13 @@ header h1 {
 
 
 .reviews{
-    background-image: url('review-bg.jpg');
+    background-image: url('/public/review-bg.jpg');
     padding: 100px 0;
     text-align: center;
 }
 
 .marketplace {
-    background-image: url('market-bg.jpg');
+    background-image: url('/public/market-bg.jpg');
     background-size: cover;
     padding: 100px 0;
     text-align: center;

@@ -2,7 +2,7 @@
 <html>
 <head>
 	<title>Slide Navbar</title>
-	<link rel="stylesheet" type="text/css" href="register.css">
+	<link rel="stylesheet" type="text/css" href="./styles/register.css">
 <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -12,21 +12,60 @@
 			<div class="signup">
 				<form>
 					<label for="chk" aria-hidden="true">Sign up</label>
-					<input type="text" name="txt" placeholder="User name" required="">
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Sign up</button>
+					<input type="text" name="txt" placeholder="User name" id="user_name" >
+					<input type="email" name="email" placeholder="Email" id="email_id" >
+					<input type="password" name="pswd" placeholder="Password" id="pass_word" >
+					<button onclick="checkInputSpacesRegister()">Sign up</button>
 				</form>
 			</div>
 
 			<div class="login">
 				<form>
 					<label for="chk" aria-hidden="true">Login</label>
-					<input type="email" name="email" placeholder="Email" required="">
-					<input type="password" name="pswd" placeholder="Password" required="">
-					<button>Login</button>
+					<input type="email" name="email" placeholder="Email" id="login_email_id">
+					<input type="password" name="pswd" placeholder="Password" id="login_pass_word">
+					<button onclick="checkInputSpacesLogin()" >Login</button>
 				</form>
 			</div>
+
+			
+			<script>
+				function checkInputSpacesRegister(){
+					const user_name=document.getElementById("user_name");
+					const email_id=document.getElementById("email_id");
+					const pass_word=document.getElementById("pass_word");
+					const user_val=user_name.value.trim();
+					const email_val=email_id.value.trim();
+					const pass_val=pass_word.value.trim();
+					if(user_val===""){
+						alert("Username is blank");
+					}else if(email_val===""){
+						alert("Not valid email ID");
+					}else if(pass_val===""){
+						alert("Not valid password");
+					}
+
+					if(pass_word.value.length<8){
+						alert("password less than 8 characters");
+					}
+				}
+				function checkInputSpacesLogin(){
+					const email_id=document.getElementById("login_email_id");
+					const pass_word=document.getElementById("login_pass_word");
+					const email_val=email_id.value.trim();
+					const pass_val=pass_word.value.trim();
+					if(email_val===""){
+						alert("Not valid email ID");
+					}else if(pass_val===""){
+						alert("Not valid password");
+					}
+					
+					if(pass_word.value.length<8){
+						alert("password less than 8 characters");
+					}
+					
+				}
+			</script>
 	</div>
 </body>
 </html>
